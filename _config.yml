@@ -1,0 +1,53 @@
+# GitHub Pages Configuration
+title: Git Cheat Sheets
+description: Comprehensive Git reference guides for developers
+author: Data Engineering Team
+baseurl: "/Data-Engineering"
+url: "https://alfieddy.github.io"
+
+# Theme
+theme: jekyll-theme-cayman
+# Alternative themes:
+# jekyll-theme-minimal
+# jekyll-theme-slate
+# jekyll-theme-architect
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Include/Exclude
+include:
+  - git-core-commands.md
+  - git-team-workflows.md
+  - git-advanced-commands.md
+  - README.md
+
+exclude:
+  - .git
+  - .gitignore
+
+# Plugins
+plugins:
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-titles-from-headings
+
+# Settings for plugins
+relative_links:
+  enabled: true
+  collections: false
+
+optional_front_matter:
+  remove_originals: false
+
+titles_from_headings:
+  enabled: true
+  strip_title: false
+  collections: false
+
+# Analytics (optional - add your tracking ID)
+# google_analytics: UA-XXXXXXXX-X
